@@ -8,3 +8,20 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Data files
+data/processed/
+data/external/
+
+# Results and outputs
+results/
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
