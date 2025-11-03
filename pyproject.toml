@@ -11,6 +11,7 @@ dependencies = [
     "matplotlib>=3.9.4",
     "matplotlib-inline>=0.2.1",
     "pandas>=2.3.3",
+    "scikit-learn>=1.6.1",
     "setuptools>=80.9.0",
     "sudachidict-full>=20250825",
     "sudachipy>=0.6.10",
