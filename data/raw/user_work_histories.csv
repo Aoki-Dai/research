@@ -1,4 +1,3 @@
-
 id,user_id,history_id,project_name,description,role,start_date,end_date,HTML,CSS,JavaScript,TypeScript,Python,Ruby,PHP,Java,C#,C++,Go,Rust,Swift,Kotlin,React,Vue,Angular,Node.js,Express,Django,Flask,Rails,Laravel,Spring,.NET,AWS,Azure,GCP,Docker,Kubernetes,MySQL,PostgreSQL,MongoDB,Git,Linux,Agile,Scrum
 1,1,1,スマホアプリ開発,"SNSアプリ開発
 [主な担当]

@@ -1,4 +1,3 @@
-
 id,name,description,desired_role,start_date,end_date,HTML,CSS,JavaScript,TypeScript,Python,Ruby,PHP,Java,C#,C++,Go,Rust,Swift,Kotlin,React,Vue,Angular,Node.js,Express,Django,Flask,Rails,Laravel,Spring,.NET,AWS,Azure,GCP,Docker,Kubernetes,MySQL,PostgreSQL,MongoDB,Git,Linux,Agile,Scrum
 1,旅行予約システム設計,当プロジェクトでは運用保守、テスト、デプロイ、ドキュメント作成、自動テスト導入やインフラ構築に取り組んでいる。,QAエンジニア,2024-04-09,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0
 2,予約管理システム設計,"現プロジェクトにおいてデータベース設計やデプロイなどに取り組んでいる。
