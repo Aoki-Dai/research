@@ -15,4 +15,5 @@ dependencies = [
     "setuptools>=80.9.0",
     "sudachidict-full>=20250825",
     "sudachipy>=0.6.10",
+    "tqdm>=4.67.1",
 ]
