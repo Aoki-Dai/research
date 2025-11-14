@@ -19,3 +19,8 @@ dependencies = [
     "sudachipy>=0.6.10",
     "tqdm>=4.67.1",
 ]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.14.5",
+]
