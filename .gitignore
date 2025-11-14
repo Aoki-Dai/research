@@ -1,4 +1,4 @@
-# Python-generated files
+# Python が自動生成するファイル
 __pycache__/
 *.py[oc]
 build/
@@ -6,22 +6,38 @@ dist/
 wheels/
 *.egg-info
 
-# Virtual environments
-.venv
+# 仮想環境（ローカルごとに異なるため Git には含めない）
+.venv/
 
-# Jupyter Notebook
+# Jupyter Notebook 関連のキャッシュ
 .ipynb_checkpoints/
 *.ipynb_checkpoints
 
-# Data files
+# データ（サイズが大きくなりやすく再取得・再生成可能なものは Git 管理外）
+data/interim/
 data/processed/
 data/external/
 
-# Results and outputs
+# 実験結果・モデル・ログ（コードから再生成できるもの）
 results/
+outputs/
+logs/
+models/
 
-# macOS
+# ローカル環境や秘密情報を含みうる設定
+.env
+.python-version
+
+# macOS 固有のファイル
 .DS_Store
 
-# IDE
+# IDE / エディタの設定（個人差が大きいもの）
 .vscode/
+.idea/
+*.swp
+*.swo
+
+# 各種キャッシュディレクトリ
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
