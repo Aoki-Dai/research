@@ -1,6 +1,6 @@
 ## コンポーネント
 
-### データ層
+### データ
 
 - **`data/raw/project.csv`**  
   - プロジェクト ID (`id`)
@@ -16,7 +16,7 @@
   - 役割 (`role`)
   - 技術スキルフラグ列（`HTML`, `CSS`, `JavaScript`, `AWS`, `Docker` など）
 
-### 前処理・テキスト分析
+### 前処理(形態素解析)
 
 - **`notebooks/01_user_work_histories-sudachi.ipynb`**  
   - 職歴テキスト（`project_name`, `description`, `role`）から名詞抽出
@@ -26,7 +26,7 @@
   - プロジェクトテキスト（`name`, `description`, `desired_role`）から名詞抽出
   - 名詞頻度の集計・可視化
 
-### 特徴量生成・モデル学習
+### word2vecモデル学習
 
 - **`notebooks/03_word2vec.ipynb`**  
   - プロジェクト・ユーザー職歴のテキストから名詞コーパスを作成
