@@ -1,10 +1,16 @@
+# データの読み込み
+import pathlib
+
 import numpy as np
 import pandas as pd
 
-# データの読み込み
+# スクリプトのディレクトリを取得
+base_dir = pathlib.Path(__file__).parent.parent.parent
+output_dir = base_dir / "outputs"
+
 try:
-    df_idf = pd.read_csv("outputs/matching_results_idf.csv")
-    df_wiki = pd.read_csv("outputs/matching_results_wiki.csv")
+    df_idf = pd.read_csv(output_dir / "matching_results_idf.csv")
+    df_wiki = pd.read_csv(output_dir / "matching_results_wiki.csv")
 except FileNotFoundError as e:
     print(f"Error loading files: {e}")
     exit(1)

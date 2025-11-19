@@ -1,5 +1,6 @@
 import csv
 import math
+import pathlib
 import statistics
 
 
@@ -18,9 +19,13 @@ def load_csv(filepath):
     return data
 
 
+# スクリプトのディレクトリを取得
+base_dir = pathlib.Path(__file__).parent.parent.parent
+output_dir = base_dir / "outputs"
+
 try:
-    data_idf = load_csv("outputs/matching_results_idf.csv")
-    data_wiki = load_csv("outputs/matching_results_wiki.csv")
+    data_idf = load_csv(output_dir / "matching_results_idf.csv")
+    data_wiki = load_csv(output_dir / "matching_results_wiki.csv")
 except FileNotFoundError as e:
     print(f"Error loading files: {e}")
     exit(1)
