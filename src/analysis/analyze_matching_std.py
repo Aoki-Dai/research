@@ -38,15 +38,15 @@ scores_wiki = [d["similarity_score"] for d in data_wiki]
 def print_stats(name, scores):
     print(f"\n### {name}")
     if not scores:
-        print("No data")
+        print("データなし")
         return
-    print(f"Count: {len(scores)}")
-    print(f"Mean: {statistics.mean(scores):.4f}")
-    print(f"Median: {statistics.median(scores):.4f}")
-    print(f"Min: {min(scores):.4f}")
-    print(f"Max: {max(scores):.4f}")
+    print(f"件数: {len(scores)}")
+    print(f"平均: {statistics.mean(scores):.4f}")
+    print(f"中央値: {statistics.median(scores):.4f}")
+    print(f"最小値: {min(scores):.4f}")
+    print(f"最大値: {max(scores):.4f}")
     if len(scores) > 1:
-        print(f"Std Dev: {statistics.stdev(scores):.4f}")
+        print(f"標準偏差: {statistics.stdev(scores):.4f}")
 
 
 print("## 基本統計量 (Similarity Score)")
@@ -124,7 +124,7 @@ if data_idf:
     sample_role = data_idf[0]["desired_role"]
 
     print(f"Project ID: {sample_project}, Role: {sample_role}")
-    print("| Rank (IDF) | User ID | Score (IDF) | Rank (Wiki) | Score (Wiki) |")
+    print("| 順位 (IDF) | ユーザーID | スコア (IDF) | 順位 (Wiki) | スコア (Wiki) |")
     print("|---|---|---|---|---|")
 
     # IDFでのこのプロジェクトの上位5件を取得
