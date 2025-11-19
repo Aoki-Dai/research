@@ -11,8 +11,9 @@ from tqdm import tqdm
 
 # Word2Vecモデルの読み込み
 print("Word2Vecモデルを読み込んでいます...")
-base_dir = os.getcwd()
-project_root = os.path.dirname(base_dir)
+project_root = os.path.dirname(
+    os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+)
 
 model_path = os.path.join(project_root, "models", "word2vec_wiki40b_full.wordvectors")
 word_vectors = KeyedVectors.load(model_path, mmap="r")
